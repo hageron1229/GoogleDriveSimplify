@@ -84,12 +84,3 @@ class GoogleDrive:
 		data = {"folder_url":self.get_link(folder_id)}
 		return data
 
-
-drive_option = {
-	"key_file": "secrets.json",
-	"folder_id": "xxxxxxxxxxxxxxxxxxxxxxxxxx",
-}
-drive = GoogleDrive(**drive_option)
-
-#r = drive.add_file("ABCあいうえおカキクケコ漢字１２３123","among_us.jpg")
-#返り値：{folder_url: リンク}
